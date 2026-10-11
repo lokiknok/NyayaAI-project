@@ -1,11 +1,8 @@
 # Render Blueprint Configuration for NyayaAI
-# Docs: https://render.com/docs/blueprint-spec
 version: "1"
 
 services:
-  # -------------------------------------------------------------
-  # 1. NyayaAI Python FastAPI Backend Service
-  # -------------------------------------------------------------
+  # Python FastAPI backend
   - type: web
     name: nyaya-backend
     runtime: python
@@ -37,14 +34,10 @@ services:
       - key: CORS_ORIGINS
         value: "*"
 
-  # -------------------------------------------------------------
-  # 2. NyayaAI React Vite Frontend Static Site
-  # -------------------------------------------------------------
+  # React Vite frontend
   - type: web
     name: nyaya-frontend
     runtime: static
-    region: oregon
-    plan: free
     rootDir: frontend
     buildCommand: npm install && npm run build
     staticPublishPath: dist
@@ -53,14 +46,9 @@ services:
         name: X-Frame-Options
         value: SAMEORIGIN
     routes:
-      # React Router SPA catch-all rewrite rule
       - type: rewrite
         source: /*
         destination: /index.html
     envVars:
       - key: VITE_API_URL
-        fromService:
-          type: web
-          name: nyaya-backend
-          property: host
-
+        value: https://nyaya-backend.onrender.com
