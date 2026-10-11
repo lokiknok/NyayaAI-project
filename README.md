@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # NyayaAI (நியாயாAI) — Indian Legal AI Assistant
 
 NyayaAI is an AI-powered legal assistant engineered for Indian law. It grounds legal inquiries in official statutory enactments from **India Code**, the **Bharatiya Nyaya Sanhita (BNS 2023)**, **BNSS 2023**, **BSA 2023**, and landmark **Supreme Court of India judgments**, supporting both **English and Tamil**.
@@ -218,3 +219,6 @@ If creating services manually:
 - **Dynamic PORT Handling**: The backend automatically resolves `$PORT` injected by Render.
 - **CORS Protection**: The API dynamically validates origins and handles wildcard credentials safely.
 - **Advocates Act 1961 Notice**: NyayaAI provides educational and statutory research information. It does not solicit clients or substitute for legal counsel from an enrolled advocate.
+=======
+# NyayaAI-project
+>>>>>>> caba7350fb33fed7810506aff9c6f660a0f86066
