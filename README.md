@@ -3,8 +3,6 @@
 
 NyayaAI is an AI-powered legal assistant engineered for Indian law. It grounds legal inquiries in official statutory enactments from **India Code**, the **Bharatiya Nyaya Sanhita (BNS 2023)**, **BNSS 2023**, **BSA 2023**, and landmark **Supreme Court of India judgments**, supporting both **English and Tamil**.
 
----
-
 ## 🏛️ Key Highlights
 
 - **Bilingual Legal AI**: Formulate legal inquiries in English or Tamil (தமிழ்) and receive doctrinal, section-level answers.
